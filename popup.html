@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/bootstrap.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/popup.js"></script> 
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <ul class="nav-container container_">
+                <li class="nav-tab active-tab" href="#home-panel">
+                    <img src="assets/home.svg" alt="">
+                    <div>home</div>
+                </li>
+                <li class="nav-tab show-tab" href="#show-panel">
+                    <img src="assets/cookie.svg" alt="">
+                    <div>show</div>
+                </li>
+                <li class="nav-tab" href="#add-panel">
+                    <img src="assets/add.svg" alt="">
+                    <div>add</div>
+                </li>
+                <li class="nav-tab rmv-tab" href="#rmv-panel">
+                    <img src="assets/minus.svg" alt="">
+                    <div>remove</div>
+                </li>
+                <li class="nav-tab" href="#imprt-panel">
+                    <img src="assets/import.svg" alt="">
+                    <div>import</div>
+                </li>
+                <li class="nav-tab" href="#shr-panel">
+                    <img src="assets/share.svg" alt="">
+                    <div>share</div>
+                </li>
+                <li class="nav-tab clear-tab" href="#clr-panel">
+                    <img src="assets/delete.svg" alt="">
+                    <div>clear</div>
+                </li>
+            </ul>
+            <ul class="main-container container_">
+                <li id="home-panel" class="panel">
+                    <div class="container">
+                        <h2>Mates Cookie Manager</h2>
+                        <hr>
+                        <p>
+                            A simple and powerful cookie manager with a neat interface.
+                            Its one of the products from <b>Mates</b> - creates products for bringing or helping the people to come together. <br> Know more about <b><a href="#">Mates</a></b> here!.
+                        </p>
+                        <p>
+                            This extension is basically made to share credentials for streaming sites without sharing passwords through cookies. You can also manage your cookies effectively with this extension.
+                            If you have any suggestions or queries, feel free to drop a mail.  
+                        </p>
+                        <hr>
+                        <p>
+                            Drop a mail at : <b>suryasantosh14523@gmail.com</b><br>
+                            Github Repo link : <a href="https://github.com/sleepingsaint/mates-cookiemanager">mates-cookiemanager</a>
+                        </p>
+                    </div>
+                </li>
+                <li id="show-panel" class="panel">
+                    <ul class="cookies_container">
+                        <li class="cookie">
+                            <div class="cookie_header" data-toggle="collapse" href="#cookie1body"><img src="assets/down-arrow.svg" alt="" class="header-icon"> Cookie 1</div>
+                            <div id="cookie1body" class="collapse cookie_body">
+                                <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                                <button class="copy_cookie_btn btn btn-sm btn-success"><img class="btn-icon" src="assets/copy.svg" alt=""> copy</button>
+                                <button class="copy_cookie_btn btn btn-sm btn-danger"><img src="assets/remove.svg" class="btn-icon" alt=""> delete</button>
+                            </div>
+                        </li>
+                        <li class="cookie">
+                            <div class="cookie_header" data-toggle="collapse" href="#cookie2body"><img src="assets/down-arrow.svg" alt="" class="header-icon"> Cookie 2</div>
+                            <div id="cookie2body" class="collapse cookie_body">
+                                <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                                <button class="copy_cookie_btn btn btn-sm btn-success"><img class="btn-icon" src="assets/copy.svg" alt=""> copy</button>
+                                <button class="copy_cookie_btn btn btn-sm btn-danger"><img src="assets/remove.svg" class="btn-icon" alt=""> delete</button>
+                            </div>
+                        </li>
+                        <li class="cookie">
+                            <div class="cookie_header" data-toggle="collapse" href="#cookie3body"><img src="assets/down-arrow.svg" alt="" class="header-icon">Cookie 3</div>
+                            <div id="cookie3body" class="collapse cookie_body">
+                                <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                                <button class="copy_cookie_btn btn btn-sm btn-success"><img class="btn-icon" src="assets/copy.svg" alt=""> copy</button>
+                                <button class="copy_cookie_btn btn btn-sm btn-danger"><img src="assets/remove.svg" class="btn-icon" alt=""> delete</button>
+                            </div>
+                        </li>
+                        <li class="cookie">
+                            <div class="cookie_header" data-toggle="collapse" href="#cookie4body"><img src="assets/down-arrow.svg" alt="" class="header-icon"> Cookie 4</div>
+                            <div id="cookie4body" class="collapse cookie_body">
+                                <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing</td>
+                                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                                <button class="copy_cookie_btn btn btn-sm btn-success"><img class="btn-icon" src="assets/copy.svg" alt=""> copy</button>
+                                <button class="copy_cookie_btn btn btn-sm btn-danger"><img src="assets/remove.svg" class="btn-icon" alt=""> delete</button>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="add-panel" class="panel">
+                    <form id="add-cookie-form">
+                        <textarea class="form-control mb-2" name="" id="" placeholder="paste cookie in json format" required></textarea>
+                        <button type="submit" class="btn btn-primary" id="add-cookie-btn">add cookie</button>
+                    </form>
+                </li>
+
+
+                <li id="rmv-panel" class="panel">
+                    <form action="" id="rmv-cookie-form">
+                        <input class="form-control mb-2" placeholder="name of the cookie" required>
+                        <p class="text-muted">*enter valid cookie name. below are the valid cookie names.</p>
+                        <button type="submit" class="btn btn-primary">remove cookie</button>
+                    </form>
+                    <hr>
+                    <div class="available-cookies"></div>
+                </li>
+                <li id="imprt-panel" class="panel">
+                    <form action="" id="imprt-cookies-form">
+                        <textarea class="form-control mb-2" name="" id="" placeholder="paste cookie in json format" required></textarea>
+                        <button type="submit" class="btn btn-primary">import cookies</button>
+                    </form>
+                </li>
+                <li id="shr-panel" class="panel">
+                    <form action="" id="shr-cookies-form">
+                        <div class="input-group">
+                            <input type="number" placeholder="duration" id="duration" class="form-control col-9" value="0">
+                            <select class="custom-select input-group-append col-3" id="duration-unit">
+                                <option value="m">minutes</option>
+                                <option value="h" selected>hours</option>
+                                <option value="d">days</option>
+                                <option value="w">week</option>
+                                <option value="M">months</option>
+                            </select>
+                        </div>
+                        <p class="text-muted">* duration for how long you want to share your cookies</p>
+                        <button type="submit" class="btn btn-primary">share cookies</button>
+                    </form>
+                </li>
+                <li id="clr-panel" class="panel">
+                    <button class="btn btn-danger clr-btn">clear all cookies</button>
+                </li>
+            </ul>
+        </div>
+
+        <input type="text" class="invisible-input">
+    </body>
+</html>

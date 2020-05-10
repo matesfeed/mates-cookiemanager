@@ -1,0 +1,135 @@
+:root{
+    --body-height: 600px;
+    --body-width: 600px;
+    --nav-color: #1d3557;
+    --nav-tab-width: 80px;
+    --nav-tab-text: #f1faee;
+    --nav-tab-active-handle: #ee6c4d;
+    --nav-tab-active-bg: #457b9d;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    width: var(--body-width);
+    height: var(--body-height);
+}
+body > input{
+    display: none;
+}
+.container_{
+    float: left;
+}
+/* nav bar */
+.nav-container{
+    width: var(--nav-tab-width);
+    height: 100%;
+    background: var(--nav-color);
+    color: #f1faee;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.nav-tab{
+    width: var(--nav-tab-width);
+    height: calc(var(--body-height) / 7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.nav-tab > img{
+    width: 30px;
+    height: 30px;
+    opacity: 0.4;
+}
+.nav-tab:hover::before{
+    content: "";
+    height: 100%;
+    width: 6px;
+    background: var(--nav-tab-active-handle);
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+.active-tab{
+    background: var(--nav-tab-active-bg);
+}
+/* main container */
+.main-container{
+    width: calc(var(--body-width) - var(--nav-tab-width));
+    height: 100%;
+    overflow-y: auto;
+}
+.main-container > li{
+    width: 100%;
+    height: 100%;
+}
+li.panel{
+    display: none;
+}
+.panel{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cookies_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.cookie{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+.cookie_header{
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.cookie_body{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.header-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transition: transform 0.2s;
+    transform: translateY(-50%);
+}
+.rotate-header-icon{
+    transform: translateY(-50%) rotate(-180deg);
+}
+.btn-icon{
+    width: 20px;
+    height: 20px;
+}
+td{
+    overflow-wrap: break-word;
+    max-width: 200px;
+}
+
+/* adding cookies */
+.panel > form > textarea{
+    min-height: 250px;
+    max-height: auto;
+}
+
+.invisible-input{
+    display: none;
+}
+
